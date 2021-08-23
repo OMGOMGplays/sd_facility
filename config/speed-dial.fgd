@@ -1,0 +1,249 @@
+// 
+// SpeedDial.DanceFloor : Sandbox.FuncBrush 
+// 
+@SolidClass = func_dance_floor : "Dance floor tile entity"
+[
+	rendercolor(color255) : "FX Color (R G B)" : "255 255 255" : "The FX color is used by the selected Render Mode."
+	renderamt(integer) [ group="Render Properties" ] : "FX Amount (0 - 255)" : 255 : "The FX amount is used by the selected Render Mode."
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+	parentname(target_destination) [ group="Hierarchy" ] : "Parent" : : "The name of this entity's parent in the movement hierarchy. Entities with parents move with their parent."
+	customcolorcode(string) : "Custom Color Code" : "" : ""
+	colorcode(integer) : "Color Code" : 0 : ""
+	interval(integer) : "Color Code Change Interval in seconds" : 1 : ""
+	enabled(boolean) : "Enabled" : 1 : "Whether this func_brush is visible/active at all"
+	solid(boolean) : "Solid" : 1 : "Whether this func_brush has collisions"
+	enable_shadows(boolean) [ group="Render Properties" ] : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
+
+	input DisableSolid(void) : "Make this func_brush non solid"
+	input EnableSolid(void) : "Make this func_brush solid"
+	input ToggleSolid(void) : "Toggle solidity of this func_brush"
+	input Enable(void) : "Enable this func_brush, making it visible"
+	input Disable(void) : "Disable this func_brush, making it invisible and non solid"
+	input Toggle(void) : "Toggle this func_brush"
+	input SetColor(string) : "Sets the color of this entity. Format is '255 255 255 255'."
+]
+
+// 
+// SpeedDial.WeaponSpawns.BatWeaponSpawn : SpeedDial.WeaponSpawns.BaseWeaponSpawn 
+// 
+@PointClass editormodel( "models/weapons/melee/melee.vmdl" ) 
+metadata
+{
+	entity_tool_name = "Bat"
+	entity_tool_group = "Speed Dial Weapons"
+	entity_tool_tip = "Bat spawn point"
+}
+= sd_weaponspawn_bat : ""
+[
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+	parentname(target_destination) [ group="Hierarchy" ] : "Parent" : : "The name of this entity's parent in the movement hierarchy. Entities with parents move with their parent."
+	respawntime(float) : "Respawn Time" : 0 : ""
+	enable_shadows(boolean) [ group="Render Properties" ] : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
+]
+
+// 
+// SpeedDial.WeaponSpawns.PistolWeaponSpawn : SpeedDial.WeaponSpawns.BaseWeaponSpawn 
+// 
+@PointClass editormodel( "models/weapons/pistol/prop_pistol.vmdl" ) 
+metadata
+{
+	entity_tool_name = "Pistol"
+	entity_tool_group = "Speed Dial Weapons"
+	entity_tool_tip = "Pistol spawn point"
+}
+= sd_weaponspawn_pistol : ""
+[
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+	parentname(target_destination) [ group="Hierarchy" ] : "Parent" : : "The name of this entity's parent in the movement hierarchy. Entities with parents move with their parent."
+	respawntime(float) : "Respawn Time" : 0 : ""
+	enable_shadows(boolean) [ group="Render Properties" ] : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
+]
+
+// 
+// SpeedDial.WeaponSpawns.RandomWeaponSpawn : SpeedDial.WeaponSpawns.BaseWeaponSpawn 
+// 
+@PointClass editormodel( "models/weapons/pistol/prop_pistol.vmdl" ) 
+metadata
+{
+	entity_tool_name = "Random Weapon"
+	entity_tool_group = "Speed Dial Weapons"
+	entity_tool_tip = "Random Weapon spawn point"
+}
+= sd_random_weaponspawn : ""
+[
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+	parentname(target_destination) [ group="Hierarchy" ] : "Parent" : : "The name of this entity's parent in the movement hierarchy. Entities with parents move with their parent."
+	respawntime(float) : "Respawn Time" : 0 : ""
+	enable_shadows(boolean) [ group="Render Properties" ] : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
+]
+
+// 
+// SpeedDial.WeaponSpawns.RifleWeaponSpawn : SpeedDial.WeaponSpawns.BaseWeaponSpawn 
+// 
+@PointClass editormodel( "models/weapons/rifle/prop_rifle.vmdl" ) 
+metadata
+{
+	entity_tool_name = "Rifle"
+	entity_tool_group = "Speed Dial Weapons"
+	entity_tool_tip = "Rifle spawn point"
+}
+= sd_weaponspawn_rifle : ""
+[
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+	parentname(target_destination) [ group="Hierarchy" ] : "Parent" : : "The name of this entity's parent in the movement hierarchy. Entities with parents move with their parent."
+	respawntime(float) : "Respawn Time" : 0 : ""
+	enable_shadows(boolean) [ group="Render Properties" ] : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
+]
+
+// 
+// SpeedDial.WeaponSpawns.RoomClearerWeaponSpawn : SpeedDial.WeaponSpawns.BaseWeaponSpawn 
+// 
+@PointClass editormodel( "models/weapons/shotgun/prop_shotgun.vmdl" ) 
+metadata
+{
+	entity_tool_name = "Room Clearer"
+	entity_tool_group = "Speed Dial Weapons"
+	entity_tool_tip = "Room Clearer spawn point"
+}
+= sd_weaponspawn_roomclearer : ""
+[
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+	parentname(target_destination) [ group="Hierarchy" ] : "Parent" : : "The name of this entity's parent in the movement hierarchy. Entities with parents move with their parent."
+	respawntime(float) : "Respawn Time" : 0 : ""
+	enable_shadows(boolean) [ group="Render Properties" ] : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
+]
+
+// 
+// SpeedDial.WeaponSpawns.ShotgunWeaponSpawn : SpeedDial.WeaponSpawns.BaseWeaponSpawn 
+// 
+@PointClass editormodel( "models/weapons/shotgun/prop_shotgun.vmdl" ) 
+metadata
+{
+	entity_tool_name = "Shotgun"
+	entity_tool_group = "Speed Dial Weapons"
+	entity_tool_tip = "Shotgun spawn point"
+}
+= sd_weaponspawn_shotgun : ""
+[
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+	parentname(target_destination) [ group="Hierarchy" ] : "Parent" : : "The name of this entity's parent in the movement hierarchy. Entities with parents move with their parent."
+	respawntime(float) : "Respawn Time" : 0 : ""
+	enable_shadows(boolean) [ group="Render Properties" ] : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
+]
+
+// 
+// SpeedDial.WeaponSpawns.SmgWeaponSpawn : SpeedDial.WeaponSpawns.BaseWeaponSpawn 
+// 
+@PointClass editormodel( "models/weapons/smg/prop_smg.vmdl" ) 
+metadata
+{
+	entity_tool_name = "Smg"
+	entity_tool_group = "Speed Dial Weapons"
+	entity_tool_tip = "Smg spawn point"
+}
+= sd_weaponspawn_smg : ""
+[
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+	parentname(target_destination) [ group="Hierarchy" ] : "Parent" : : "The name of this entity's parent in the movement hierarchy. Entities with parents move with their parent."
+	respawntime(float) : "Respawn Time" : 0 : ""
+	enable_shadows(boolean) [ group="Render Properties" ] : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
+]
+
+// 
+// SpeedDial.WeaponSpawns.SniperWeaponSpawn : SpeedDial.WeaponSpawns.BaseWeaponSpawn 
+// 
+@PointClass editormodel( "models/weapons/rifle/prop_rifle.vmdl" ) 
+metadata
+{
+	entity_tool_name = "Sniper"
+	entity_tool_group = "Speed Dial Weapons"
+	entity_tool_tip = "Sniper spawn point"
+}
+= sd_weaponspawn_sniper : ""
+[
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+	parentname(target_destination) [ group="Hierarchy" ] : "Parent" : : "The name of this entity's parent in the movement hierarchy. Entities with parents move with their parent."
+	respawntime(float) : "Respawn Time" : 0 : ""
+	enable_shadows(boolean) [ group="Render Properties" ] : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
+]
+
+// 
+// SpeedDial.Meds.Leaf : SpeedDial.Meds.BaseMedication 
+// 
+@PointClass editormodel( "models/drugs/leaf/leaf.vmdl" ) 
+metadata
+{
+	entity_tool_name = "Leaf"
+	entity_tool_group = "Speed Dial Drugs"
+	entity_tool_tip = "Leaf spawn point"
+}
+= meds_leaf : ""
+[
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+	parentname(target_destination) [ group="Hierarchy" ] : "Parent" : : "The name of this entity's parent in the movement hierarchy. Entities with parents move with their parent."
+	respawntime(float) : "Respawn Time" : 0 : ""
+	enable_shadows(boolean) [ group="Render Properties" ] : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
+
+	input SetColor(string) : "Sets the color of this entity. Format is '255 255 255 255'."
+]
+
+// 
+// SpeedDial.Meds.Ollie : SpeedDial.Meds.BaseMedication 
+// 
+@PointClass editormodel( "models/drugs/ollie/ollie.vmdl" ) 
+metadata
+{
+	entity_tool_name = "Ollie"
+	entity_tool_group = "Speed Dial Drugs"
+	entity_tool_tip = "Ollie spawn point"
+}
+= meds_ollie : ""
+[
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+	parentname(target_destination) [ group="Hierarchy" ] : "Parent" : : "The name of this entity's parent in the movement hierarchy. Entities with parents move with their parent."
+	respawntime(float) : "Respawn Time" : 0 : ""
+	enable_shadows(boolean) [ group="Render Properties" ] : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
+
+	input SetColor(string) : "Sets the color of this entity. Format is '255 255 255 255'."
+]
+
+// 
+// SpeedDial.Meds.Polvo : SpeedDial.Meds.BaseMedication 
+// 
+@PointClass editormodel( "models/drugs/polvo/polvo.vmdl" ) 
+metadata
+{
+	entity_tool_name = "Polvo"
+	entity_tool_group = "Speed Dial Drugs"
+	entity_tool_tip = "Polvo spawn point"
+}
+= meds_polvo : ""
+[
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+	parentname(target_destination) [ group="Hierarchy" ] : "Parent" : : "The name of this entity's parent in the movement hierarchy. Entities with parents move with their parent."
+	respawntime(float) : "Respawn Time" : 0 : ""
+	enable_shadows(boolean) [ group="Render Properties" ] : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
+
+	input SetColor(string) : "Sets the color of this entity. Format is '255 255 255 255'."
+]
+
+// 
+// SpeedDial.Meds.Ritindi : SpeedDial.Meds.BaseMedication 
+// 
+@PointClass editormodel( "models/drugs/ritindi/ritindi.vmdl" ) 
+metadata
+{
+	entity_tool_name = "Ritindi"
+	entity_tool_group = "Speed Dial Drugs"
+	entity_tool_tip = "Ritindi spawn point"
+}
+= meds_ritindi : ""
+[
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+	parentname(target_destination) [ group="Hierarchy" ] : "Parent" : : "The name of this entity's parent in the movement hierarchy. Entities with parents move with their parent."
+	respawntime(float) : "Respawn Time" : 0 : ""
+	enable_shadows(boolean) [ group="Render Properties" ] : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
+
+	input SetColor(string) : "Sets the color of this entity. Format is '255 255 255 255'."
+]
+

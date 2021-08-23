@@ -2,15 +2,15 @@
 
 Layer0
 {
-	shader "vr_parallax_occlusion.vfx"
+	shader "parallax_occlusion.vfx"
 
 	//---- Ambient Occlusion ----
-	TextureAmbientOcclusion "materials/paintedbricks004_2k_ambientocclusion.jpg"
+	TextureAmbientOcclusion "sd_facility/materials/paintedbricks004_2k_ambientocclusion.jpg"
 
 	//---- Color ----
 	g_flModelTintAmount "1.000"
 	g_vColorTint "[0.925490 0.925490 0.925490 1.000000]"
-	TextureColor "materials/paintedbricks004_2k_color.jpg"
+	TextureColor "sd_facility/materials/paintedbricks004_2k_color.jpg"
 
 	//---- Fade ----
 	g_flFadeExponent "1.000"
@@ -26,17 +26,17 @@ Layer0
 	TextureMetalness "materials/default/default_metal.tga"
 
 	//---- Normal ----
-	TextureNormal "materials/paintedbricks004_2k_normal.jpg"
+	TextureNormal "sd_facility/materials/paintedbricks004_2k_normal.jpg"
 
 	//---- Parallax ----
 	g_flHeightMapScale "0.020"
 	g_nLODThreshold "12"
 	g_nMaxSamples "32"
 	g_nMinSamples "8"
-	TextureHeight "materials/paintedbricks004_2k_displacement.jpg"
+	TextureHeight "sd_facility/materials/paintedbricks004_2k_displacement.jpg"
 
 	//---- Roughness ----
-	TextureRoughness "materials/paintedbricks004_2k_roughness.jpg"
+	TextureRoughness "sd_facility/materials/paintedbricks004_2k_roughness.jpg"
 
 	//---- Texture Coordinates ----
 	g_nScaleTexCoordUByModelScaleAxis "0"
