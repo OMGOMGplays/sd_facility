@@ -14,12 +14,12 @@ Layer0
 	//---- Ambient Occlusion ----
 	g_flAmbientOcclusionDirectDiffuse "0.000"
 	g_flAmbientOcclusionDirectSpecular "0.000"
-	TextureAmbientOcclusion "sd_facility/materials/slkkdckb_2k_ao.jpg"
+	TextureAmbientOcclusion "materials/slkkdckb_2k_ao.jpg"
 
 	//---- Color ----
 	g_flModelTintAmount "1.000"
 	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
-	TextureColor "sd_facility/materials/slkkdckb_2k_albedo.jpg"
+	TextureColor "materials/slkkdckb_2k_albedo.jpg"
 
 	//---- Fade ----
 	g_flFadeExponent "1.000"
@@ -32,13 +32,13 @@ Layer0
 	g_flDirectionalLightmapStrength "1.000"
 
 	//---- Metalness ----
-	TextureMetalness "sd_facility/materials/slkkdckb_2k_metalness.jpg"
+	TextureMetalness "materials/slkkdckb_2k_metalness.jpg"
 
 	//---- Normal ----
-	TextureNormal "sd_facility/materials/slkkdckb_2k_normal.jpg"
+	TextureNormal "materials/slkkdckb_2k_normal.jpg"
 
 	//---- Roughness ----
-	TextureRoughness "sd_facility/materials/slkkdckb_2k_roughness.jpg"
+	TextureRoughness "materials/slkkdckb_2k_roughness.jpg"
 
 	//---- Texture Coordinates ----
 	g_nScaleTexCoordUByModelScaleAxis "0"
@@ -49,5 +49,5 @@ Layer0
 
 	//---- Translucent ----
 	g_flOpacityScale "1.000"
-	TextureTranslucency "sd_facility/materials/slkkdckb_2k_opacity.jpg"
+	TextureTranslucency "materials/slkkdckb_2k_opacity.jpg"
 }

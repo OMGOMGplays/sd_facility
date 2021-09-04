@@ -42,7 +42,7 @@
 						[
 							{
 								from = "aset_nature_rock_s_uknnfet_lod3.vmat"
-								to = "sd_facility/materials/metal007_2k_color.vmat"
+								to = "materials/metal007_2k_color.vmat"
 							},
 						]
 						use_global_default = false
@@ -63,7 +63,10 @@
 						recenter_on_parent_bone = false
 						offset_origin = [ 0.0, 0.0, 0.0 ]
 						offset_angles = [ 0.0, 0.0, 0.0 ]
-						filename = "sd_facility/models/uknnfet_LOD3.fbx"
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
+						filename = "models/uknnfet_lod3.fbx"
 						import_scale = 1.0
 						faceMergeAngle = 10.0
 						maxHullVertices = 0
@@ -83,7 +86,7 @@
 				[
 					{
 						_class = "RenderMeshFile"
-						filename = "sd_facility/models/uknnfet_lod3.fbx"
+						filename = "models/uknnfet_lod3.fbx"
 						import_translation = [ 0.0, 0.0, 0.0 ]
 						import_rotation = [ 0.0, 0.0, 0.0 ]
 						import_scale = 1.0

@@ -42,7 +42,7 @@
 						[
 							{
 								from = "aset_props__s_vdkvdds_lod2.vmat"
-								to = "sd_facility/materials/vdkvdds_2k_albedo.vmat"
+								to = "materials/vdkvdds_2k_albedo.vmat"
 							},
 						]
 						use_global_default = false
@@ -63,7 +63,10 @@
 						recenter_on_parent_bone = false
 						offset_origin = [ 0.0, 0.0, 0.0 ]
 						offset_angles = [ 0.0, 0.0, 0.0 ]
-						filename = "sd_facility/models/vdkvdds_LOD2.fbx"
+						align_origin_x_type = "None"
+						align_origin_y_type = "None"
+						align_origin_z_type = "None"
+						filename = "models/vdkvdds_lod2.fbx"
 						import_scale = 1.0
 						faceMergeAngle = 10.0
 						maxHullVertices = 0
@@ -83,7 +86,7 @@
 				[
 					{
 						_class = "RenderMeshFile"
-						filename = "sd_facility/models/vdkvdds_lod2.fbx"
+						filename = "models/vdkvdds_lod2.fbx"
 						import_translation = [ 0.0, 0.0, 0.0 ]
 						import_rotation = [ 0.0, 0.0, 0.0 ]
 						import_scale = 1.0

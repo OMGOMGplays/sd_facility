@@ -10,7 +10,7 @@ Layer0
 	//---- Color ----
 	g_flModelTintAmount "1.000"
 	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
-	TextureColor "sd_facility/materials/metal002_2k_color.jpg"
+	TextureColor "materials/metal002_2k_color.jpg"
 
 	//---- Fade ----
 	g_flFadeExponent "1.000"
@@ -23,20 +23,20 @@ Layer0
 	g_flDirectionalLightmapStrength "1.000"
 
 	//---- Metalness ----
-	TextureMetalness "sd_facility/materials/metal002_2k_metalness.jpg"
+	TextureMetalness "materials/metal002_2k_metalness.jpg"
 
 	//---- Normal ----
-	TextureNormal "sd_facility/materials/metal002_2k_normal.jpg"
+	TextureNormal "materials/metal002_2k_normal.jpg"
 
 	//---- Parallax ----
 	g_flHeightMapScale "0.002"
 	g_nLODThreshold "12"
 	g_nMaxSamples "32"
 	g_nMinSamples "8"
-	TextureHeight "sd_facility/materials/metal002_2k_displacement.jpg"
+	TextureHeight "materials/metal002_2k_displacement.jpg"
 
 	//---- Roughness ----
-	TextureRoughness "sd_facility/materials/metal002_2k_roughness.jpg"
+	TextureRoughness "materials/metal002_2k_roughness.jpg"
 
 	//---- Texture Coordinates ----
 	g_nScaleTexCoordUByModelScaleAxis "0"
